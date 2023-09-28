@@ -286,6 +286,25 @@ img {
   margin-bottom: 3rem !important;
 }
 
+:root {
+  --white: #fff;
+  --white-lighter: white;
+  --black: #000;
+  --black-lighter: #4d4d4d;
+  --darkBlue: #1e293a;
+  --darkBlue-lighter: #49648d;
+  --lightBlue: #5d7a97;
+  --lightBlue-lighter: #8ca2b8;
+  --pink: #ff2896;
+  --pink-lighter: #ff69b6;
+  --orange: #ff9b65;
+  --orange-lighter: #ffb993;
+  --darkGreen: #00d5d5;
+  --darkGreen-lighter: #2fffff;
+  --lightGreen: #00ffbf;
+  --lightGreen-lighter: #4dffd2;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 1rem;
@@ -315,6 +334,40 @@ img {
   .container {
     max-width: 1536px;
   }
+}
+
+.bioCard {
+  width: 20rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--darkBlue);
+  color: var(--lightBlue);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+}
+.bioCard__img {
+  border-radius: 50rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  width: 11rem;
+  align-self: center;
+}
+.bioCard__ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
