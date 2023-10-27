@@ -19,3 +19,25 @@
 	padding: 0;
 	margin: 0;
 }
+
+@mixin textGradient($direction, $startColor, $endColor) {
+	background: linear-gradient(to $direction, $startColor 0%, $endColor 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin pillButton($background, $color, $bigIcon: false) {
+	background: $background;
+	border-radius: 50rem;
+	aspect-ratio: 1 / 1;
+	display: inline-flex;
+	svg {
+		margin: auto;
+		fill: $color;
+		@if $bigIcon {
+			height: 75%;
+		} @else {
+			height: 50%;
+		}
+	}
+}
