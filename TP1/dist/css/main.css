@@ -438,5 +438,16 @@ img {
   fill: var(--pink);
   height: 50%;
 }
+.bioCard__a--alt {
+  background: linear-gradient(to bottom, var(--lightGreen), var(--darkGreen));
+  border-radius: 50rem;
+  aspect-ratio: 1/1;
+  display: inline-flex;
+}
+.bioCard__a--alt svg {
+  margin: auto;
+  fill: true;
+  height: 50%;
+}
 
 /*# sourceMappingURL=main.css.map */

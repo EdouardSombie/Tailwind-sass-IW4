@@ -77,5 +77,11 @@
 		width: f.rem(32);
 		height: f.rem(32);
 		@include m.pillButton(var(--white), var(--pink), false);
+		&--alt {
+			@include m.pillButton(
+				linear-gradient(to bottom, var(--lightGreen), var(--darkGreen)),
+				true
+			);
+		}
 	}
 }
